@@ -1,0 +1,14 @@
+{
+  "price_ranges": [
+    {"min_price": 30000, "max_price": 50000}
+  ],
+  "products": [
+    {"name": "Product A", "rating": 5}
+  ],
+  "wish_list": {
+    "name": "MyWishList",
+    "description": "A wish list for testing purposes"
+  }
+}
+
+

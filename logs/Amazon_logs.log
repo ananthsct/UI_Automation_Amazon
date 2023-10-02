@@ -1,0 +1,149 @@
+2023-10-02 22:46:36,063: INFO: Clicked on amazon link from search result
+2023-10-02 22:46:36,981: INFO: Amazon sign-in link is clicked
+2023-10-02 22:46:44,044: INFO: Login to Amazon successful
+2023-10-02 22:46:45,326: INFO: All button is clicked
+2023-10-02 22:46:45,355: INFO: Scrolled down to 200 pixels
+2023-10-02 22:46:47,492: INFO: Electronics got selected
+2023-10-02 22:46:51,515: INFO: Scrolled down to 200 pixels
+2023-10-02 22:47:01,829: INFO: Dell Laptop searched
+2023-10-02 22:47:06,851: INFO: Scrolled down to 500 pixels
+2023-10-02 22:47:08,956: INFO: Minimum price entered is: 30000
+2023-10-02 22:47:11,051: INFO: Maximum price entered is: 50000
+2023-10-02 22:47:28,634: INFO: Price is in range
+2023-10-02 22:47:28,641: INFO: Price is in range
+2023-10-02 22:47:28,646: INFO: Price is in range
+2023-10-02 22:47:28,652: INFO: Price is in range
+2023-10-02 22:47:28,658: INFO: Price is in range
+2023-10-02 22:47:28,663: INFO: Price is in range
+2023-10-02 22:47:28,671: INFO: Price is in range
+2023-10-02 22:47:28,677: INFO: Price is in range
+2023-10-02 22:47:28,682: INFO: Price is in range
+2023-10-02 22:47:28,688: INFO: Price is in range
+2023-10-02 22:47:28,693: INFO: Price is in range
+2023-10-02 22:47:28,701: INFO: Price is in range
+2023-10-02 22:47:28,707: INFO: Price is in range
+2023-10-02 22:47:28,712: INFO: Price is in range
+2023-10-02 22:47:28,718: INFO: Price is in range
+2023-10-02 22:47:28,725: INFO: Price is in range
+2023-10-02 22:47:28,730: INFO: Price is in range
+2023-10-02 22:47:28,738: INFO: Price is in range
+2023-10-02 22:47:28,742: INFO: Price is in range
+2023-10-02 22:47:28,750: INFO: Price is in range
+2023-10-02 22:47:28,761: INFO: Price is in range
+2023-10-02 22:47:28,769: INFO: Price is in range
+2023-10-02 22:47:28,769: INFO: All Product prices are in range
+2023-10-02 22:47:30,815: INFO: Product price is: 48,490
+2023-10-02 22:47:30,821: INFO: Product name is: Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:30,832: INFO: Product price is: 49,490
+2023-10-02 22:47:30,838: INFO: Product name is: Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:30,851: INFO: Product price is: 36,490
+2023-10-02 22:47:30,856: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB
+2023-10-02 22:47:30,872: INFO: Product price is: 34,990
+2023-10-02 22:47:30,877: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/8GB 
+2023-10-02 22:47:30,890: INFO: Product price is: 48,490
+2023-10-02 22:47:30,896: INFO: Product name is: Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:30,909: INFO: Product price is: 38,390
+2023-10-02 22:47:30,915: INFO: Product name is: Dell 15 Laptop, Intel Core i3-1115G4, 8GB/1TB + 25
+2023-10-02 22:47:30,926: INFO: Product price is: 35,990
+2023-10-02 22:47:30,932: INFO: Product name is: Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/
+2023-10-02 22:47:30,943: INFO: Product price is: 38,099
+2023-10-02 22:47:30,950: INFO: Product name is: Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8
+2023-10-02 22:47:30,963: INFO: Product price is: 49,490
+2023-10-02 22:47:30,970: INFO: Product name is: Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:30,982: INFO: Product price is: 35,990
+2023-10-02 22:47:30,987: INFO: Product name is: Dell Inspiron 3525 Laptop, AMD Ryzen R3-5425U/8GB/
+2023-10-02 22:47:31,000: INFO: Product price is: 38,099
+2023-10-02 22:47:31,006: INFO: Product name is: Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8
+2023-10-02 22:47:31,017: INFO: Product price is: 37,799
+2023-10-02 22:47:31,023: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-02 22:47:31,037: INFO: Product price is: 47,880
+2023-10-02 22:47:31,042: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel Core I5-1135G7 Pr
+2023-10-02 22:47:31,053: INFO: Product price is: 37,799
+2023-10-02 22:47:31,060: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-02 22:47:31,071: INFO: Product price is: 41,999
+2023-10-02 22:47:31,076: INFO: Product name is: Dell 13th Gen Laptop, Intel Core i3-1305U Processo
+2023-10-02 22:47:31,088: INFO: Product price is: 46,780
+2023-10-02 22:47:31,096: INFO: Product name is: Dell Inspiron 3530 Laptop, Intel i3-1305U/8GB/1TB 
+2023-10-02 22:47:31,111: INFO: Product price is: 38,990
+2023-10-02 22:47:31,118: INFO: Product name is: Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G
+2023-10-02 22:47:31,130: INFO: Product price is: 38,990
+2023-10-02 22:47:31,136: INFO: Product name is: Dell Vostro 3520 Laptop, Intel i3-1115G4/8GB/512GB
+2023-10-02 22:47:31,177: INFO: Product price is: 34,000
+2023-10-02 22:47:31,185: INFO: Product name is: Dell Latitude Ultra Book 7290 12.5 " Laptop (Intel
+2023-10-02 22:47:31,195: INFO: Product price is: 39,990
+2023-10-02 22:47:31,201: INFO: Product name is: Dell 14 Laptop, Intel Core i3-1115G4, 8GB DDR4, 51
+2023-10-02 22:47:31,212: INFO: Product price is: 17,990
+2023-10-02 22:47:31,219: INFO: Product name is: Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS
+2023-10-02 22:47:31,230: INFO: Product price is: 37,990
+2023-10-02 22:47:31,235: INFO: Product name is: HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 
+2023-10-02 22:47:31,241: INFO: Product data list: [('Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.8, 48490), ('Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.7, 49490), ('Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB', 4.0, 36490), ('Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/8GB ', 3.8, 34990), ('Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.8, 48490), ('Dell 15 Laptop, Intel Core i3-1115G4, 8GB/1TB + 25', 3.3, 38390), ('Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/', 4.0, 35990), ('Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8', 3.1, 38099), ('Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.7, 49490), ('Dell Inspiron 3525 Laptop, AMD Ryzen R3-5425U/8GB/', 4.0, 35990), ('Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8', 3.1, 38099), ('Dell 14 Laptop, Intel Core 12th Generation i3-1215', 4.0, 37799), ('Dell Inspiron 3511 Laptop, Intel Core I5-1135G7 Pr', 3.1, 47880), ('Dell 14 Laptop, Intel Core 12th Generation i3-1215', 4.0, 37799), ('Dell 13th Gen Laptop, Intel Core i3-1305U Processo', 4.0, 41999), ('Dell Inspiron 3530 Laptop, Intel i3-1305U/8GB/1TB ', 3.9, 46780), ('Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G', 4.2, 38990), ('Dell Vostro 3520 Laptop, Intel i3-1115G4/8GB/512GB', 2.7, 38990), ('Dell Latitude Ultra Book 7290 12.5 " Laptop (Intel', 3.6, 34000), ('Dell 14 Laptop, Intel Core i3-1115G4, 8GB DDR4, 51', 3.9, 39990), ("Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS", 4.1, 17990), ('HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 ', 4.2, 37990)]
+2023-10-02 22:47:42,416: INFO: Scrolled down to -200 pixels
+2023-10-02 22:47:46,440: INFO: Price is in range
+2023-10-02 22:47:46,445: INFO: Price is in range
+2023-10-02 22:47:46,452: INFO: Price is in range
+2023-10-02 22:47:46,461: INFO: Price is in range
+2023-10-02 22:47:46,467: INFO: Price is in range
+2023-10-02 22:47:46,472: INFO: Price is in range
+2023-10-02 22:47:46,477: INFO: Price is in range
+2023-10-02 22:47:46,486: INFO: Price is in range
+2023-10-02 22:47:46,491: INFO: Price is in range
+2023-10-02 22:47:46,501: INFO: Price is in range
+2023-10-02 22:47:46,507: INFO: Price is in range
+2023-10-02 22:47:46,511: INFO: Price is in range
+2023-10-02 22:47:46,528: INFO: Price is in range
+2023-10-02 22:47:46,653: INFO: Price is in range
+2023-10-02 22:47:46,661: INFO: Price is in range
+2023-10-02 22:47:46,671: INFO: Price is in range
+2023-10-02 22:47:46,679: INFO: Price is in range
+2023-10-02 22:47:46,689: INFO: Price is in range
+2023-10-02 22:47:46,696: INFO: Price is in range
+2023-10-02 22:47:46,776: INFO: Price is in range
+2023-10-02 22:47:46,791: INFO: Price is in range
+2023-10-02 22:47:46,799: INFO: Price is in range
+2023-10-02 22:47:46,800: INFO: All Product prices are in range
+2023-10-02 22:47:48,840: INFO: Product price is: 48,490
+2023-10-02 22:47:48,847: INFO: Product name is: Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:48,860: INFO: Product price is: 49,490
+2023-10-02 22:47:48,869: INFO: Product name is: Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:48,882: INFO: Product price is: 36,490
+2023-10-02 22:47:48,887: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB
+2023-10-02 22:47:48,900: INFO: Product price is: 34,990
+2023-10-02 22:47:48,906: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/8GB 
+2023-10-02 22:47:48,917: INFO: Product price is: 48,490
+2023-10-02 22:47:48,925: INFO: Product name is: Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:48,937: INFO: Product price is: 38,390
+2023-10-02 22:47:48,944: INFO: Product name is: Dell 15 Laptop, Intel Core i3-1115G4, 8GB/1TB + 25
+2023-10-02 22:47:48,955: INFO: Product price is: 35,990
+2023-10-02 22:47:48,961: INFO: Product name is: Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/
+2023-10-02 22:47:48,972: INFO: Product price is: 38,099
+2023-10-02 22:47:48,978: INFO: Product name is: Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8
+2023-10-02 22:47:48,990: INFO: Product price is: 49,490
+2023-10-02 22:47:48,996: INFO: Product name is: Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G
+2023-10-02 22:47:49,008: INFO: Product price is: 35,990
+2023-10-02 22:47:49,015: INFO: Product name is: Dell Inspiron 3525 Laptop, AMD Ryzen R3-5425U/8GB/
+2023-10-02 22:47:49,026: INFO: Product price is: 38,099
+2023-10-02 22:47:49,032: INFO: Product name is: Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8
+2023-10-02 22:47:49,044: INFO: Product price is: 37,799
+2023-10-02 22:47:49,051: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-02 22:47:49,062: INFO: Product price is: 47,880
+2023-10-02 22:47:49,068: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel Core I5-1135G7 Pr
+2023-10-02 22:47:49,081: INFO: Product price is: 37,799
+2023-10-02 22:47:49,087: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-02 22:47:49,098: INFO: Product price is: 41,999
+2023-10-02 22:47:49,103: INFO: Product name is: Dell 13th Gen Laptop, Intel Core i3-1305U Processo
+2023-10-02 22:47:49,116: INFO: Product price is: 46,780
+2023-10-02 22:47:49,122: INFO: Product name is: Dell Inspiron 3530 Laptop, Intel i3-1305U/8GB/1TB 
+2023-10-02 22:47:49,133: INFO: Product price is: 38,990
+2023-10-02 22:47:49,139: INFO: Product name is: Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G
+2023-10-02 22:47:49,175: INFO: Product price is: 38,990
+2023-10-02 22:47:49,182: INFO: Product name is: Dell Vostro 3520 Laptop, Intel i3-1115G4/8GB/512GB
+2023-10-02 22:47:49,193: INFO: Product price is: 34,000
+2023-10-02 22:47:49,198: INFO: Product name is: Dell Latitude Ultra Book 7290 12.5 " Laptop (Intel
+2023-10-02 22:47:49,210: INFO: Product price is: 39,990
+2023-10-02 22:47:49,217: INFO: Product name is: Dell 14 Laptop, Intel Core i3-1115G4, 8GB DDR4, 51
+2023-10-02 22:47:49,227: INFO: Product price is: 17,990
+2023-10-02 22:47:49,234: INFO: Product name is: Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS
+2023-10-02 22:47:49,245: INFO: Product price is: 37,990
+2023-10-02 22:47:49,252: INFO: Product name is: HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 
+2023-10-02 22:47:49,257: INFO: Product data list: [('Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.8, 48490), ('Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.7, 49490), ('Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB', 4.0, 36490), ('Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/8GB ', 3.8, 34990), ('Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.8, 48490), ('Dell 15 Laptop, Intel Core i3-1115G4, 8GB/1TB + 25', 3.3, 38390), ('Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/', 4.0, 35990), ('Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8', 3.1, 38099), ('Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8G', 3.7, 49490), ('Dell Inspiron 3525 Laptop, AMD Ryzen R3-5425U/8GB/', 4.0, 35990), ('Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8', 3.1, 38099), ('Dell 14 Laptop, Intel Core 12th Generation i3-1215', 4.0, 37799), ('Dell Inspiron 3511 Laptop, Intel Core I5-1135G7 Pr', 3.1, 47880), ('Dell 14 Laptop, Intel Core 12th Generation i3-1215', 4.0, 37799), ('Dell 13th Gen Laptop, Intel Core i3-1305U Processo', 4.0, 41999), ('Dell Inspiron 3530 Laptop, Intel i3-1305U/8GB/1TB ', 3.9, 46780), ('Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G', 4.2, 38990), ('Dell Vostro 3520 Laptop, Intel i3-1115G4/8GB/512GB', 2.7, 38990), ('Dell Latitude Ultra Book 7290 12.5 " Laptop (Intel', 3.6, 34000), ('Dell 14 Laptop, Intel Core i3-1115G4, 8GB DDR4, 51', 3.9, 39990), ("Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS", 4.1, 17990), ('HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 ', 4.2, 37990)]
+2023-10-02 22:47:49,258: INFO: Product data list with maximum rating: []
