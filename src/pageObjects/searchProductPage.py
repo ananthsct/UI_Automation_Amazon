@@ -116,15 +116,14 @@ class SearchProductPage:
 
     def is_price_in_range(self):
         try:
-            wait = WebDriverWait(driver, 15)
-            prices = wait.until(ec.presence_of_all_elements_located(
-                (By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
+            wait = WebDriverWait(self.driver, 15)
+            prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
             for price in prices:
                 price = wait.until(ec.visibility_of(price))
                 price = price.text
                 try:
                     price_value = int(price.replace(",", ""))
-                    if 30000 <= price_value <= 50000:
+                    if self.min_price_value <= price_value <= self.max_price_value:
                         self.logger.info(f"Price is in range")
                 except ValueError:
                     continue
@@ -135,47 +134,63 @@ class SearchProductPage:
     def go_to_page(self, page):
         try:
             time.sleep(3)
+            wait = WebDriverWait(self.driver, 10)
             element = self.driver.find_element(By.XPATH, "//a[@aria-label='Go to page {}']".format(page))
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-            WebDriverWait(self.driver, 15).until(ec.element_to_be_clickable((By.XPATH, "//a[@aria-label='Go to page {}']".format(page))))
-            time.sleep(3)
+            time.sleep(2)
+            self.driver.execute_script(f"window.scrollBy(0, -200);")
+            wait.until(ec.element_to_be_clickable((By.XPATH, "//a[@aria-label='Go to page {}']".format(page))))
             element.click()
-            time.sleep(5)
+            time.sleep(3)
             self.logger.info(f"Switched to page number - {page}")
         except Exception as e:
             print(f"Exception occurred while selecting switching to page: {e}")
 
-    def add_product_if_rating_is_above_4(self):
+    def add_product_to_list(self):
         wait = WebDriverWait(self.driver, 15)
         products = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")))
-        ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-icon-alt']")))
+        ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span//a//i//span[@class='a-icon-alt' and contains(text(), 'out of')]")))
         prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
         product_data = []
-        zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
-        for product, rating, price in zip_products:
-            if product is not None and rating is not None and price is not None:
-                try:
-                    price = wait.until(ec.visibility_of(price))
-                    price = price.text
-                    self.logger.info(f"Product price is: {price}")
-                    product = wait.until(ec.visibility_of(product))
-                    product = product.text
-                    product_name = str(product[0:50])
-                    self.logger.info(f"Product name is: {product_name}")
-                    rating = wait.until(ec.presence_of_element_located((By.XPATH, "//span[@class='a-icon-alt']")))
-                    product_rating = rating.text
+        # zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
+        for product, rating, price in zip(products, ratings, prices):
+            try:
+                product = wait.until(ec.visibility_of(product))
+                product = product.text
+                product_name = str(product[0:50])
+                self.logger.info(f"Product name is: {product_name}")
+
+                price = wait.until(ec.visibility_of(price))
+                price = price.text
+                product_price = int(price.replace(",", ""))
+                self.logger.info(f"Product price is: {price}")
+
+                # product_rating = rating.get_attribute("innerHTML")
+                # self.logger.info(f"Product rating using innerHTML: {product_rating}")
+                product_rating = rating.get_attribute("textContent")
+                # self.logger.info(f"Product rating using textContent : {product_rating}")
+                match = re.search(r'\d+\.\d+', product_rating)
+                if match:
+                    first_float_number = float(match.group())
+                    product_rating = first_float_number
                     self.logger.info(f"Product rating is: {product_rating}")
-                    match = re.search(r'\d+\.\d+', product_rating)
-                    if match:
-                        first_float_number = float(match.group())
-                        product_rating = first_float_number
-                        self.logger.info(f"Product rating is: {product_rating}")
-                    product_price = int(price.replace(",", ""))
-                    product_data.append((product_name, product_rating, product_price))
-                except ValueError:
-                    print("add products to list is failed")
+
+                product_data.append((product_name, product_rating, product_price))
+
+            except ValueError:
+                print("add products to list is failed")
         # self.logger.info(f"Product data list: {product_data}")
         return product_data
+
+    def select_rating(self, rating):
+        try:
+            # rating should be between 2 and 4
+            element = self.driver.find_element(By.XPATH, "//section[@aria-label='{} Stars & Up']".format(rating))
+            element = WebDriverWait(self.driver, 15).until(ec.element_to_be_clickable(element))
+            self.driver.execute_script("arguments[0].click();", element)
+            self.logger.info(f"Rating {rating} is selected successfully")
+        except Exception as e:
+            print(f"Exception occurred while selecting rating button: {e}")
 
 
 if __name__ == "__main__":

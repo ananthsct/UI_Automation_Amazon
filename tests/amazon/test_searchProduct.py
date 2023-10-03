@@ -34,30 +34,28 @@ def test_product_search(setup):
     time.sleep(4)
     searchProduct.search_product("Dell Laptop")
     time.sleep(5)
-    searchProduct.scroll_down(900)
-    time.sleep(2)
+    searchProduct.scroll_down(500)
+    searchProduct.select_rating(4)          # rating should be between 2 and 4
+    searchProduct.scroll_down(800)
     searchProduct.set_min_price()
-    time.sleep(2)
     searchProduct.set_max_price()
-    time.sleep(2)
-    # searchProduct.select_go_button()
+    # searchProduct.select_go_button()      # using ENTER key instead of selecting go button
     time.sleep(5)
     searchProduct.scroll_down(200)
     searchProduct.is_price_in_range()
     time.sleep(2)
-    product_data_1 = searchProduct.add_product_if_rating_is_above_4()
-    # logger.info(f"Product data list: {product_data_1}")
+    product_list_1 = searchProduct.add_product_to_list()
     time.sleep(2)
     searchProduct.go_to_page(2)
     time.sleep(2)
     searchProduct.scroll_down(-200)     # scroll up 200pixels
     time.sleep(2)
     searchProduct.is_price_in_range()
-    product_data_2 = searchProduct.add_product_if_rating_is_above_4()
-    all_product_data = product_data_1 + product_data_2
-    # products_with_max_rate = [product for product in all_product_data if product[1] == 5.0]
-    # logger.info(f"Product data list with maximum rating: {products_with_max_rate}")
-    product_name_with_min_value = min(all_product_data, key=lambda x: x[2])
+    product_list_2 = searchProduct.add_product_to_list()
+    all_product_list = product_list_1 + product_list_2
+    products_with_max_rate = [product for product in all_product_list if product[1] == 5.0]
+    logger.info(f"Product data list with maximum rating: {products_with_max_rate}")
+    product_name_with_min_value = min(products_with_max_rate, key=lambda x: x[2])
     logger.info(f"Product name with minimum value among maximum rating: {product_name_with_min_value}")
     # element = wait.until(ec.element_to_be_clickable((By.XPATH, "//span[contains(text(),{})]".format(product_name_with_min_value))))
     # driver.execute_script("arguments[0].scrollIntoView(true);", element)
