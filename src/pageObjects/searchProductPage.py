@@ -1,4 +1,5 @@
 import time
+import re
 import itertools
 from selenium import webdriver
 from selenium.common import ElementClickInterceptedException
@@ -26,7 +27,7 @@ class SearchProductPage:
     search_box = (By.XPATH, "//input[@id='twotabsearchtextbox']")
     min_price = (By.XPATH, "//input[@id='low-price']")
     max_price = (By.XPATH, "//input[@id='high-price']")
-    go_button = (By.XPATH, "//span[@id='a-autoid-1']")
+    go_button = (By.XPATH, "//span[@class='a-button-text'][normalize-space()='Go']")
     get_price = (By.XPATH, "//span[@class='a-price-whole']")
     second_page = (By.XPATH, "//a[@aria-label='Go to page 2']")
 
@@ -69,9 +70,11 @@ class SearchProductPage:
 
     def select_all_electronics(self):
         try:
-            element = self.all_electronics2
-            WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable(element))
-            self.driver.find_element(*SearchProductPage.all_electronics2).click()
+            element = self.all_electronics
+            wait = WebDriverWait(self.driver, 10)
+            wait.until(ec.element_to_be_clickable(element))
+            # self.driver.find_element(*SearchProductPage.all_electronics).click()
+            self.driver.execute_script("arguments[0].click();", self.driver.find_element(*SearchProductPage.all_electronics))
             self.logger.info(f"All Electronics got selected")
             time.sleep(2)
         except ElementClickInterceptedException as e:
@@ -97,7 +100,7 @@ class SearchProductPage:
             element = self.max_price
             price = self.max_price_value
             element = WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable(element))
-            element.send_keys(price)
+            element.send_keys(price, Keys.ENTER)
             self.logger.info(f"Maximum price entered is: {price}")
         except Exception as e:
             print(f"Exception occurred while setting max_price: {e}")
@@ -105,27 +108,27 @@ class SearchProductPage:
     def select_go_button(self):
         try:
             element = self.go_button
-            element = WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable(element))
-            element.click()
+            element = WebDriverWait(self.driver, 15).until(ec.element_to_be_clickable(element))
+            self.driver.execute_script("arguments[0].click();", element)
             self.logger.info(f"Go button is selected")
         except Exception as e:
             print(f"Exception occurred while selecting go button: {e}")
 
     def is_price_in_range(self):
         try:
-            time.sleep(10)
-            # element = self.get_price
-            prices = self.driver.find_elements(By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")
+            wait = WebDriverWait(driver, 15)
+            prices = wait.until(ec.presence_of_all_elements_located(
+                (By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
             for price in prices:
+                price = wait.until(ec.visibility_of(price))
                 price = price.text
                 try:
                     price_value = int(price.replace(",", ""))
-                    if self.min_price_value <= price_value <= self.max_price_value:
-                        pass
+                    if 30000 <= price_value <= 50000:
+                        self.logger.info(f"Price is in range")
                 except ValueError:
                     continue
             self.logger.info(f"All Product prices are in range")
-            return False
         except Exception as e:
             print(f"Exception occurred before verifying price range: {e}")
 
@@ -143,43 +146,35 @@ class SearchProductPage:
             print(f"Exception occurred while selecting switching to page: {e}")
 
     def add_product_if_rating_is_above_4(self):
-        time.sleep(2)
-        # element = self.get_price
-        products = self.driver.find_elements(By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")
-        ratings = self.driver.find_elements(By.XPATH, "//span[@class='a-size-base puis-normal-weight-text']")
-        prices = self.driver.find_elements(By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")
-        # self.logger.info(f"{products}")
-        # self.logger.info(f"{ratings}")
-        # self.logger.info(f"{prices}")
-
-        # zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
-        # max_rating = 0
-        # min_price = 50000
+        wait = WebDriverWait(self.driver, 15)
+        products = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")))
+        ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-icon-alt']")))
+        prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
         product_data = []
-        # with open(file_path, 'w') as file:
-        for product, rating, price in zip(products, ratings, prices):
-            try:
-                product_name = product.text
-                product_rating = float(rating.text)
-                product_price = price.text
-                # file.write(f'\nProduct Name: {product_name}\nProduct rating:{product_rating}\nProduct Price:{product_price}')
-                product_data.append((product_name, product_rating, product_price))
-                # if 4 <= product_rating <= 5:
-                #     file.write(f'\nProduct Name: {product_name}\nProduct rating:{product_rating}\nProduct Price:{product_price}')
-                #     self.logger.info(f"Product Name: {product_name}, Rating: {product_rating}, Price: {product_price}")
-                #     product_data.append((product_name, product_rating, product_price))
-                # if product_rating >= max_rating:
-                #     max_rating = product_rating
-                #     self.logger.info(f"Updated max_rating: {max_rating}")
-                # if float(product_price) <= min_price:
-                #     min_price = float(product_price)
-                #     self.logger.info(f"Updated min_price: {min_price}")
-            except ValueError:
-                print("add products to file is failed")
-            # self.logger.info(f"Maximum rating of product: {max_rating} and Minimum price of Product: {min_price}")
-            # self.logger.info(f"{len(products)}-Products above rating 4 are added to {file_path}")
-
-        # result = [(product, rating, price) for product, rating, price in product_data if rating == max_rating and price == min_price]
+        zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
+        for product, rating, price in zip_products:
+            if product is not None and rating is not None and price is not None:
+                try:
+                    price = wait.until(ec.visibility_of(price))
+                    price = price.text
+                    self.logger.info(f"Product price is: {price}")
+                    product = wait.until(ec.visibility_of(product))
+                    product = product.text
+                    product_name = str(product[0:50])
+                    self.logger.info(f"Product name is: {product_name}")
+                    rating = wait.until(ec.presence_of_element_located((By.XPATH, "//span[@class='a-icon-alt']")))
+                    product_rating = rating.text
+                    self.logger.info(f"Product rating is: {product_rating}")
+                    match = re.search(r'\d+\.\d+', product_rating)
+                    if match:
+                        first_float_number = float(match.group())
+                        product_rating = first_float_number
+                        self.logger.info(f"Product rating is: {product_rating}")
+                    product_price = int(price.replace(",", ""))
+                    product_data.append((product_name, product_rating, product_price))
+                except ValueError:
+                    print("add products to list is failed")
+        # self.logger.info(f"Product data list: {product_data}")
         return product_data
 
 
