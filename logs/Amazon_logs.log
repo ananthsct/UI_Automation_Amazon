@@ -1,277 +1,255 @@
-2023-10-03 20:00:40,673: INFO: Clicked on amazon link from search result
-2023-10-03 20:00:42,002: INFO: Amazon sign-in link is clicked
-2023-10-03 20:00:49,911: INFO: Login to Amazon successful
-2023-10-03 20:01:02,284: INFO: Clicked on amazon link from search result
-2023-10-03 20:01:03,304: INFO: Amazon sign-in link is clicked
-2023-10-03 20:01:11,363: INFO: Login to Amazon successful
-2023-10-03 20:01:12,792: INFO: All button is clicked
-2023-10-03 20:01:23,922: INFO: Scrolled down to 200 pixels
-2023-10-03 20:01:26,062: INFO: Electronics got selected
-2023-10-03 20:01:30,092: INFO: Scrolled down to 200 pixels
-2023-10-03 20:01:35,566: INFO: All Electronics got selected
-2023-10-03 20:01:47,398: INFO: Dell Laptop searched
-2023-10-03 20:01:52,436: INFO: Scrolled down to 500 pixels
-2023-10-03 20:01:52,540: INFO: Rating 4 is selected successfully
-2023-10-03 20:01:52,560: INFO: Scrolled down to 800 pixels
-2023-10-03 20:01:54,270: INFO: Minimum price entered is: 30000
-2023-10-03 20:01:56,856: INFO: Maximum price entered is: 50000
-2023-10-03 20:02:01,886: INFO: Scrolled down to 200 pixels
-2023-10-03 20:02:01,950: INFO: Price is in range
-2023-10-03 20:02:01,987: INFO: Price is in range
-2023-10-03 20:02:02,007: INFO: Price is in range
-2023-10-03 20:02:02,051: INFO: Price is in range
-2023-10-03 20:02:02,084: INFO: Price is in range
-2023-10-03 20:02:02,139: INFO: Price is in range
-2023-10-03 20:02:02,165: INFO: Price is in range
-2023-10-03 20:02:02,187: INFO: Price is in range
-2023-10-03 20:02:02,215: INFO: Price is in range
-2023-10-03 20:02:02,236: INFO: Price is in range
-2023-10-03 20:02:02,261: INFO: Price is in range
-2023-10-03 20:02:02,288: INFO: Price is in range
-2023-10-03 20:02:02,318: INFO: Price is in range
-2023-10-03 20:02:02,345: INFO: Price is in range
-2023-10-03 20:02:02,375: INFO: Price is in range
-2023-10-03 20:02:02,399: INFO: Price is in range
-2023-10-03 20:02:02,434: INFO: Price is in range
-2023-10-03 20:02:02,457: INFO: Price is in range
-2023-10-03 20:02:02,481: INFO: Price is in range
-2023-10-03 20:02:02,507: INFO: Price is in range
-2023-10-03 20:02:02,532: INFO: Price is in range
-2023-10-03 20:02:02,563: INFO: Price is in range
-2023-10-03 20:02:02,588: INFO: Price is in range
-2023-10-03 20:02:02,612: INFO: Price is in range
-2023-10-03 20:02:02,636: INFO: Price is in range
-2023-10-03 20:02:02,661: INFO: Price is in range
-2023-10-03 20:02:02,693: INFO: Price is in range
-2023-10-03 20:02:02,717: INFO: Price is in range
-2023-10-03 20:02:02,742: INFO: Price is in range
-2023-10-03 20:02:02,767: INFO: All Product prices are in range
-2023-10-03 20:02:04,842: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
-2023-10-03 20:02:04,858: INFO: Product price is: 37,799
-2023-10-03 20:02:04,875: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:04,875: INFO: Product rating is: 4.0
-2023-10-03 20:02:04,900: INFO: Product name is: Lenovo ThinkPad E15 Intel Core i3 12th Gen 15.6" (
-2023-10-03 20:02:04,924: INFO: Product price is: 47,750
-2023-10-03 20:02:04,942: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:04,942: INFO: Product rating is: 4.2
-2023-10-03 20:02:04,970: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB
-2023-10-03 20:02:05,022: INFO: Product price is: 36,490
-2023-10-03 20:02:05,046: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,046: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,071: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
-2023-10-03 20:02:05,095: INFO: Product price is: 37,799
-2023-10-03 20:02:05,112: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,114: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,136: INFO: Product name is: Dell 13th Gen Laptop, Intel Core i3-1305U Processo
-2023-10-03 20:02:05,161: INFO: Product price is: 41,999
-2023-10-03 20:02:05,178: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,178: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,206: INFO: Product name is: Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS
-2023-10-03 20:02:05,227: INFO: Product price is: 17,990
-2023-10-03 20:02:05,243: INFO: Product rating using textContent : 3.9 out of 5 stars
-2023-10-03 20:02:05,243: INFO: Product rating is: 3.9
-2023-10-03 20:02:05,272: INFO: Product name is: Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &
-2023-10-03 20:02:05,292: INFO: Product price is: 37,899
-2023-10-03 20:02:05,309: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,309: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,327: INFO: Product name is: Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G
-2023-10-03 20:02:05,358: INFO: Product price is: 38,990
-2023-10-03 20:02:05,367: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:05,371: INFO: Product rating is: 4.2
-2023-10-03 20:02:05,391: INFO: Product name is: (Refurbished) Dell Latitude 7390 8th Gen Intel Cor
-2023-10-03 20:02:05,416: INFO: Product price is: 31,988
-2023-10-03 20:02:05,436: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,436: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,459: INFO: Product name is: (Refurbished) Dell Latitude 14 7400 14" Notebook -
-2023-10-03 20:02:05,480: INFO: Product price is: 34,500
-2023-10-03 20:02:05,489: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,489: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,513: INFO: Product name is: Dell Intel Inspiron 3511 Laptop, i3-1115G4, Win 10
-2023-10-03 20:02:05,538: INFO: Product price is: 37,990
-2023-10-03 20:02:05,546: INFO: Product rating using textContent : 4.1 out of 5 stars
-2023-10-03 20:02:05,546: INFO: Product rating is: 4.1
-2023-10-03 20:02:05,571: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel Core i5-1135G7, 8
-2023-10-03 20:02:05,596: INFO: Product price is: 48,490
-2023-10-03 20:02:05,604: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,604: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,629: INFO: Product name is: Dell New Inspiron 3515 Laptop, AMD Ryzen3-3250U, W
-2023-10-03 20:02:05,652: INFO: Product price is: 36,990
-2023-10-03 20:02:05,660: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,668: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,685: INFO: Product name is: Dell Inspiron 3525 Laptop,R5-5625U,8Gb Ddr4,512Gb 
-2023-10-03 20:02:05,709: INFO: Product price is: 44,490
-2023-10-03 20:02:05,725: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:05,727: INFO: Product rating is: 5.0
-2023-10-03 20:02:05,742: INFO: Product name is: Dell Vostro 3405 AMD Ryzen-5 3450U 14 inches(35cm)
-2023-10-03 20:02:05,775: INFO: Product price is: 45,000
-2023-10-03 20:02:05,788: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,788: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,808: INFO: Product name is: Lenovo ThinkPad E14 Intel Core i3 12th Gen 14" FHD
-2023-10-03 20:02:05,840: INFO: Product price is: 48,990
-2023-10-03 20:02:05,856: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:05,857: INFO: Product rating is: 4.0
-2023-10-03 20:02:05,881: INFO: Product name is: Lenovo Ideapad 1 AMD Ryzen 5 5500U 15.6" (39.62cm)
-2023-10-03 20:02:05,921: INFO: Product price is: 41,990
-2023-10-03 20:02:05,938: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:05,938: INFO: Product rating is: 4.2
-2023-10-03 20:02:05,971: INFO: Product name is: Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4,
-2023-10-03 20:02:06,004: INFO: Product price is: 46,590
-2023-10-03 20:02:06,023: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:06,023: INFO: Product rating is: 5.0
-2023-10-03 20:02:06,056: INFO: Product name is: Dell Vostro 3401 Laptop - Intel i3-1115G4, 8GB DDR
-2023-10-03 20:02:06,085: INFO: Product price is: 45,990
-2023-10-03 20:02:06,101: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:06,109: INFO: Product rating is: 4.2
-2023-10-03 20:02:06,128: INFO: Product name is: Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-
-2023-10-03 20:02:06,159: INFO: Product price is: 39,399
-2023-10-03 20:02:06,175: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:06,175: INFO: Product rating is: 4.0
-2023-10-03 20:02:06,208: INFO: Product name is: Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1
-2023-10-03 20:02:06,242: INFO: Product price is: 31,895
-2023-10-03 20:02:06,259: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:06,259: INFO: Product rating is: 5.0
-2023-10-03 20:02:06,292: INFO: Product name is: (Refurbished) Dell Latitude 7400 Laptop - 14.0" FH
-2023-10-03 20:02:06,325: INFO: Product price is: 45,858
-2023-10-03 20:02:06,341: INFO: Product rating using textContent : 4.6 out of 5 stars
-2023-10-03 20:02:06,341: INFO: Product rating is: 4.6
-2023-10-03 20:02:06,365: INFO: Product name is: Dell (Renewed) Latitude Laptop E7470 Intel Core I7
-2023-10-03 20:02:06,389: INFO: Product price is: 33,232
-2023-10-03 20:02:06,406: INFO: Product rating using textContent : 2.9 out of 5 stars
-2023-10-03 20:02:06,406: INFO: Product rating is: 2.9
-2023-10-03 20:02:06,428: INFO: Product name is: (Refurbished) Dell Latitude 14 7400 14 inches Note
-2023-10-03 20:02:06,451: INFO: Product price is: 39,400
-2023-10-03 20:02:06,464: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:06,464: INFO: Product rating is: 4.0
-2023-10-03 20:02:06,487: INFO: Product name is: Dell Inspiron 15-inch Laptop (39.62cms) | Windows 
-2023-10-03 20:02:06,504: INFO: Product price is: 36,492
-2023-10-03 20:02:06,523: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:06,523: INFO: Product rating is: 4.0
-2023-10-03 20:02:06,545: INFO: Product name is: Dell (Renewed) Latitude E6440-i5-16 GB-500 GB 14-i
-2023-10-03 20:02:06,570: INFO: Product price is: 44,425
-2023-10-03 20:02:06,579: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:06,579: INFO: Product rating is: 5.0
-2023-10-03 20:02:06,603: INFO: Product name is: Dell Inspiron 3511-Intel Core i3-11th Gen || 8 GB 
-2023-10-03 20:02:06,629: INFO: Product price is: 46,990
-2023-10-03 20:02:06,644: INFO: Product rating using textContent : 4.3 out of 5 stars
-2023-10-03 20:02:06,644: INFO: Product rating is: 4.3
-2023-10-03 20:02:06,661: INFO: Product name is: Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-
-2023-10-03 20:02:06,693: INFO: Product price is: 42,736
-2023-10-03 20:02:06,701: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:06,701: INFO: Product rating is: 4.0
-2023-10-03 20:02:06,729: INFO: Product name is: Dell Vostro 3525 Laptop, AMD Ryzen 5-5500U Process
-2023-10-03 20:02:06,761: INFO: Product price is: 39,999
-2023-10-03 20:02:06,776: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:06,776: INFO: Product rating is: 4.2
-2023-10-03 20:02:06,801: INFO: Product name is: TECNO MEGABOOK T1,Intel Core 11th Gen i3 Processor
-2023-10-03 20:02:06,829: INFO: Product price is: 44,990
-2023-10-03 20:02:06,843: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:06,843: INFO: Product rating is: 5.0
-2023-10-03 20:02:06,867: INFO: Product name is: Lenovo IdeaPad Slim 3 Ryzen 5 7520U 15.6" (39.6cm)
-2023-10-03 20:02:06,891: INFO: Product price is: 2,421
-2023-10-03 20:02:06,908: INFO: Product rating using textContent : 4.1 out of 5 stars
-2023-10-03 20:02:06,908: INFO: Product rating is: 4.1
-2023-10-03 20:02:17,287: INFO: Switched to page number - 2
-2023-10-03 20:02:19,307: INFO: Scrolled down to -200 pixels
-2023-10-03 20:02:21,376: INFO: Price is in range
-2023-10-03 20:02:21,417: INFO: Price is in range
-2023-10-03 20:02:21,450: INFO: Price is in range
-2023-10-03 20:02:21,487: INFO: Price is in range
-2023-10-03 20:02:21,524: INFO: Price is in range
-2023-10-03 20:02:21,557: INFO: Price is in range
-2023-10-03 20:02:21,589: INFO: Price is in range
-2023-10-03 20:02:21,622: INFO: Price is in range
-2023-10-03 20:02:21,661: INFO: Price is in range
-2023-10-03 20:02:21,695: INFO: Price is in range
-2023-10-03 20:02:21,734: INFO: Price is in range
-2023-10-03 20:02:21,768: INFO: Price is in range
-2023-10-03 20:02:21,809: INFO: Price is in range
-2023-10-03 20:02:21,835: INFO: Price is in range
-2023-10-03 20:02:21,874: INFO: Price is in range
-2023-10-03 20:02:21,906: INFO: Price is in range
-2023-10-03 20:02:21,940: INFO: Price is in range
-2023-10-03 20:02:21,972: INFO: Price is in range
-2023-10-03 20:02:22,004: INFO: Price is in range
-2023-10-03 20:02:22,037: INFO: Price is in range
-2023-10-03 20:02:22,037: INFO: All Product prices are in range
-2023-10-03 20:02:22,118: INFO: Product name is: Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &
-2023-10-03 20:02:22,159: INFO: Product price is: 37,899
-2023-10-03 20:02:22,177: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:22,177: INFO: Product rating is: 4.0
-2023-10-03 20:02:22,208: INFO: Product name is: TECNO MEGABOOK T1, Intel Core 11th Gen i5 Processo
-2023-10-03 20:02:22,240: INFO: Product price is: 49,999
-2023-10-03 20:02:22,260: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:22,260: INFO: Product rating is: 5.0
-2023-10-03 20:02:22,298: INFO: Product name is: Dell Inspiron 3511Laptop - Intel i3-1115G4, 8GB, 5
-2023-10-03 20:02:22,331: INFO: Product price is: 40,149
-2023-10-03 20:02:22,354: INFO: Product rating using textContent : 4.1 out of 5 stars
-2023-10-03 20:02:22,354: INFO: Product rating is: 4.1
-2023-10-03 20:02:22,387: INFO: Product name is: (Refurbished) Dell Latitude Laptop E3380 Touch Scr
-2023-10-03 20:02:22,420: INFO: Product price is: 30,992
-2023-10-03 20:02:22,436: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:22,436: INFO: Product rating is: 4.2
-2023-10-03 20:02:22,468: INFO: Product name is: (Refurbished) Dell Latitude 7400 14" Notebook - 19
-2023-10-03 20:02:22,509: INFO: Product price is: 32,500
-2023-10-03 20:02:22,525: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:22,525: INFO: Product rating is: 5.0
-2023-10-03 20:02:22,561: INFO: Product name is: Dell Inspiron 3530 13th Gen Laptop, Intel Core i3-
-2023-10-03 20:02:22,591: INFO: Product price is: 44,830
-2023-10-03 20:02:22,615: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:22,615: INFO: Product rating is: 5.0
-2023-10-03 20:02:22,647: INFO: Product name is: (Refurbished) Dell Vostro 3425 Laptop, Ryzen R5-56
-2023-10-03 20:02:22,691: INFO: Product price is: 39,601
-2023-10-03 20:02:22,709: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:22,709: INFO: Product rating is: 4.0
-2023-10-03 20:02:22,737: INFO: Product name is: Dell Vostro 3510 Laptop, Intel Core i3-1115G4/ 8GB
-2023-10-03 20:02:22,781: INFO: Product price is: 43,750
-2023-10-03 20:02:22,800: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:22,802: INFO: Product rating is: 5.0
-2023-10-03 20:02:22,835: INFO: Product name is: Dell Inspiron 3505 15.6 inches FHD Display Laptop 
-2023-10-03 20:02:22,868: INFO: Product price is: 48,500
-2023-10-03 20:02:22,884: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:22,884: INFO: Product rating is: 4.0
-2023-10-03 20:02:22,917: INFO: Product name is: Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-
-2023-10-03 20:02:22,951: INFO: Product price is: 49,990
-2023-10-03 20:02:22,967: INFO: Product rating using textContent : 4.2 out of 5 stars
-2023-10-03 20:02:22,967: INFO: Product rating is: 4.2
-2023-10-03 20:02:22,991: INFO: Product name is: (Refurbished) Dell New Inspiron 3515 Laptop, AMD R
-2023-10-03 20:02:23,024: INFO: Product price is: 36,550
-2023-10-03 20:02:23,047: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:23,048: INFO: Product rating is: 4.0
-2023-10-03 20:02:23,073: INFO: Product name is: (Refurbished) Dell Latitude Hybrid Laptop E6330 In
-2023-10-03 20:02:23,106: INFO: Product price is: 30,991
-2023-10-03 20:02:23,130: INFO: Product rating using textContent : 4.0 out of 5 stars
-2023-10-03 20:02:23,130: INFO: Product rating is: 4.0
-2023-10-03 20:02:23,155: INFO: Product name is: Dell Chromebook 11 3000 3100 11.6" Chromebook - HD
-2023-10-03 20:02:23,190: INFO: Product price is: 41,656
-2023-10-03 20:02:23,208: INFO: Product rating using textContent : 4.3 out of 5 stars
-2023-10-03 20:02:23,208: INFO: Product rating is: 4.3
-2023-10-03 20:02:23,229: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel i3-1115G4 & USB W
-2023-10-03 20:02:23,254: INFO: Product price is: 37,839
-2023-10-03 20:02:23,270: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:23,274: INFO: Product rating is: 5.0
-2023-10-03 20:02:23,304: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel i3-1115G4 & MS116
-2023-10-03 20:02:23,328: INFO: Product price is: 36,799
-2023-10-03 20:02:23,348: INFO: Product rating using textContent : 5.0 out of 5 stars
-2023-10-03 20:02:23,348: INFO: Product rating is: 5.0
-2023-10-03 20:02:23,370: INFO: Product name is: Adamanta 32GB (2x16GB) Laptop Memory Upgrade Compa
-2023-10-03 20:02:23,402: INFO: Product price is: 31,008
-2023-10-03 20:02:23,421: INFO: Product rating using textContent : 4.6 out of 5 stars
-2023-10-03 20:02:23,421: INFO: Product rating is: 4.6
-2023-10-03 20:02:23,443: INFO: Product name is: Dell SSD 1TB Class 40 M.2 2280 NVMe PCIe 3.0 Gen 3
-2023-10-03 20:02:23,476: INFO: Product price is: 42,469
-2023-10-03 20:02:23,508: INFO: Product rating using textContent : 4.6 out of 5 stars
-2023-10-03 20:02:23,508: INFO: Product rating is: 4.6
-2023-10-03 20:02:23,533: INFO: Product name is: Dell Alienware AW2521HF 62.23 cm/24.5 inch, 1920 x
-2023-10-03 20:02:23,565: INFO: Product price is: 33,500
-2023-10-03 20:02:23,574: INFO: Product rating using textContent : 4.4 out of 5 stars
-2023-10-03 20:02:23,574: INFO: Product rating is: 4.4
-2023-10-03 20:02:23,601: INFO: Product name is: Dell 24" (60.96 cm) LED 1920x1080 Pixels Touch Mon
-2023-10-03 20:02:23,623: INFO: Product price is: 46,900
-2023-10-03 20:02:23,639: INFO: Product rating using textContent : 4.4 out of 5 stars
-2023-10-03 20:02:23,639: INFO: Product rating is: 4.4
-2023-10-03 20:02:23,672: INFO: Product name is: Dell Ultra Sharp 27 USB-C Hub Monitor – U2722DE
-2023-10-03 20:02:23,697: INFO: Product price is: 38,500
-2023-10-03 20:02:23,710: INFO: Product rating using textContent : 4.1 out of 5 stars
-2023-10-03 20:02:23,710: INFO: Product rating is: 4.1
-2023-10-03 20:02:23,711: INFO: Product data list with maximum rating: [('Dell Inspiron 3525 Laptop,R5-5625U,8Gb Ddr4,512Gb ', 5.0, 44490), ('Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4,', 5.0, 46590), ('Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1', 5.0, 31895), ('Dell (Renewed) Latitude E6440-i5-16 GB-500 GB 14-i', 5.0, 44425), ('TECNO MEGABOOK T1,Intel Core 11th Gen i3 Processor', 5.0, 44990), ('TECNO MEGABOOK T1, Intel Core 11th Gen i5 Processo', 5.0, 49999), ('(Refurbished) Dell Latitude 7400 14" Notebook - 19', 5.0, 32500), ('Dell Inspiron 3530 13th Gen Laptop, Intel Core i3-', 5.0, 44830), ('Dell Vostro 3510 Laptop, Intel Core i3-1115G4/ 8GB', 5.0, 43750), ('Dell Inspiron 3511 Laptop, Intel i3-1115G4 & USB W', 5.0, 37839), ('Dell Inspiron 3511 Laptop, Intel i3-1115G4 & MS116', 5.0, 36799)]
-2023-10-03 20:02:23,711: INFO: Product name with minimum value among maximum rating: ('Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1', 5.0, 31895)
+2023-10-03 20:09:47,759: INFO: Clicked on amazon link from search result
+2023-10-03 20:09:48,766: INFO: Amazon sign-in link is clicked
+2023-10-03 20:09:57,301: INFO: Login to Amazon successful
+2023-10-03 20:10:11,760: INFO: Clicked on amazon link from search result
+2023-10-03 20:10:12,920: INFO: Amazon sign-in link is clicked
+2023-10-03 20:10:21,754: INFO: Login to Amazon successful
+2023-10-03 20:10:23,015: INFO: All button is clicked
+2023-10-03 20:10:23,122: INFO: Scrolled down to 200 pixels
+2023-10-03 20:10:25,311: INFO: Electronics got selected
+2023-10-03 20:10:29,339: INFO: Scrolled down to 200 pixels
+2023-10-03 20:10:34,496: INFO: All Electronics got selected
+2023-10-03 20:10:46,683: INFO: Dell Laptop searched
+2023-10-03 20:10:51,710: INFO: Scrolled down to 500 pixels
+2023-10-03 20:10:51,817: INFO: Rating 4 is selected successfully
+2023-10-03 20:10:51,835: INFO: Scrolled down to 800 pixels
+2023-10-03 20:10:53,533: INFO: Minimum price entered is: 30000
+2023-10-03 20:10:55,712: INFO: Maximum price entered is: 50000
+2023-10-03 20:11:00,736: INFO: Scrolled down to 200 pixels
+2023-10-03 20:11:00,816: INFO: Price is in range
+2023-10-03 20:11:00,838: INFO: Price is in range
+2023-10-03 20:11:00,859: INFO: Price is in range
+2023-10-03 20:11:00,887: INFO: Price is in range
+2023-10-03 20:11:00,908: INFO: Price is in range
+2023-10-03 20:11:00,957: INFO: Price is in range
+2023-10-03 20:11:00,982: INFO: Price is in range
+2023-10-03 20:11:01,006: INFO: Price is in range
+2023-10-03 20:11:01,039: INFO: Price is in range
+2023-10-03 20:11:01,071: INFO: Price is in range
+2023-10-03 20:11:01,104: INFO: Price is in range
+2023-10-03 20:11:01,121: INFO: Price is in range
+2023-10-03 20:11:01,145: INFO: Price is in range
+2023-10-03 20:11:01,170: INFO: Price is in range
+2023-10-03 20:11:01,199: INFO: Price is in range
+2023-10-03 20:11:01,225: INFO: Price is in range
+2023-10-03 20:11:01,245: INFO: Price is in range
+2023-10-03 20:11:01,268: INFO: Price is in range
+2023-10-03 20:11:01,301: INFO: Price is in range
+2023-10-03 20:11:01,325: INFO: Price is in range
+2023-10-03 20:11:01,350: INFO: Price is in range
+2023-10-03 20:11:01,390: INFO: Price is in range
+2023-10-03 20:11:01,415: INFO: Price is in range
+2023-10-03 20:11:01,441: INFO: Price is in range
+2023-10-03 20:11:01,466: INFO: Price is in range
+2023-10-03 20:11:01,490: INFO: Price is in range
+2023-10-03 20:11:01,514: INFO: Price is in range
+2023-10-03 20:11:01,544: INFO: Price is in range
+2023-10-03 20:11:01,564: INFO: Price is in range
+2023-10-03 20:11:01,589: INFO: Price is in range
+2023-10-03 20:11:01,616: INFO: All Product prices are in range
+2023-10-03 20:11:03,683: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-03 20:11:03,700: INFO: Product price is: 37,799
+2023-10-03 20:11:03,717: INFO: Product rating is: 4.0
+2023-10-03 20:11:03,749: INFO: Product name is: Lenovo ThinkPad E15 Intel Core i3 12th Gen 15.6" (
+2023-10-03 20:11:03,782: INFO: Product price is: 47,750
+2023-10-03 20:11:03,799: INFO: Product rating is: 4.2
+2023-10-03 20:11:03,822: INFO: Product name is: Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB
+2023-10-03 20:11:03,862: INFO: Product price is: 36,490
+2023-10-03 20:11:03,878: INFO: Product rating is: 4.0
+2023-10-03 20:11:03,911: INFO: Product name is: Dell 14 Laptop, Intel Core 12th Generation i3-1215
+2023-10-03 20:11:03,944: INFO: Product price is: 37,799
+2023-10-03 20:11:03,962: INFO: Product rating is: 4.0
+2023-10-03 20:11:03,997: INFO: Product name is: Dell 13th Gen Laptop, Intel Core i3-1305U Processo
+2023-10-03 20:11:04,029: INFO: Product price is: 41,999
+2023-10-03 20:11:04,042: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,079: INFO: Product name is: Chuwi HeroBook Pro 14.1'' Laptop, 8GB RAM 256GB SS
+2023-10-03 20:11:04,109: INFO: Product price is: 17,990
+2023-10-03 20:11:04,133: INFO: Product rating is: 3.9
+2023-10-03 20:11:04,165: INFO: Product name is: Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &
+2023-10-03 20:11:04,198: INFO: Product price is: 37,899
+2023-10-03 20:11:04,215: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,246: INFO: Product name is: Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512G
+2023-10-03 20:11:04,281: INFO: Product price is: 38,990
+2023-10-03 20:11:04,295: INFO: Product rating is: 4.2
+2023-10-03 20:11:04,331: INFO: Product name is: (Refurbished) Dell Latitude 7390 8th Gen Intel Cor
+2023-10-03 20:11:04,363: INFO: Product price is: 31,988
+2023-10-03 20:11:04,384: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,417: INFO: Product name is: (Refurbished) Dell Latitude 14 7400 14" Notebook -
+2023-10-03 20:11:04,450: INFO: Product price is: 34,500
+2023-10-03 20:11:04,467: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,498: INFO: Product name is: Dell Intel Inspiron 3511 Laptop, i3-1115G4, Win 10
+2023-10-03 20:11:04,531: INFO: Product price is: 37,990
+2023-10-03 20:11:04,548: INFO: Product rating is: 4.1
+2023-10-03 20:11:04,584: INFO: Product name is: Dell Inspiron 3511 Laptop, Intel Core i5-1135G7, 8
+2023-10-03 20:11:04,614: INFO: Product price is: 48,490
+2023-10-03 20:11:04,628: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,669: INFO: Product name is: Dell New Inspiron 3515 Laptop, AMD Ryzen3-3250U, W
+2023-10-03 20:11:04,711: INFO: Product price is: 36,990
+2023-10-03 20:11:04,726: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,767: INFO: Product name is: Dell Inspiron 3525 Laptop,R5-5625U,8Gb Ddr4,512Gb 
+2023-10-03 20:11:04,799: INFO: Product price is: 44,490
+2023-10-03 20:11:04,818: INFO: Product rating is: 5.0
+2023-10-03 20:11:04,848: INFO: Product name is: Dell Vostro 3405 AMD Ryzen-5 3450U 14 inches(35cm)
+2023-10-03 20:11:04,881: INFO: Product price is: 45,000
+2023-10-03 20:11:04,897: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,922: INFO: Product name is: Lenovo ThinkPad E14 Intel Core i3 12th Gen 14" FHD
+2023-10-03 20:11:04,947: INFO: Product price is: 48,990
+2023-10-03 20:11:04,963: INFO: Product rating is: 4.0
+2023-10-03 20:11:04,995: INFO: Product name is: Lenovo Ideapad 1 AMD Ryzen 5 5500U 15.6" (39.62cm)
+2023-10-03 20:11:05,027: INFO: Product price is: 41,990
+2023-10-03 20:11:05,044: INFO: Product rating is: 4.2
+2023-10-03 20:11:05,068: INFO: Product name is: Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4,
+2023-10-03 20:11:05,102: INFO: Product price is: 46,590
+2023-10-03 20:11:05,117: INFO: Product rating is: 5.0
+2023-10-03 20:11:05,151: INFO: Product name is: Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-
+2023-10-03 20:11:05,183: INFO: Product price is: 45,990
+2023-10-03 20:11:05,200: INFO: Product rating is: 4.0
+2023-10-03 20:11:05,224: INFO: Product name is: Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1
+2023-10-03 20:11:05,261: INFO: Product price is: 39,399
+2023-10-03 20:11:05,274: INFO: Product rating is: 5.0
+2023-10-03 20:11:05,308: INFO: Product name is: (Refurbished) Dell Latitude 7400 Laptop - 14.0" FH
+2023-10-03 20:11:05,331: INFO: Product price is: 31,895
+2023-10-03 20:11:05,347: INFO: Product rating is: 4.6
+2023-10-03 20:11:05,383: INFO: Product name is: (Refurbished) Dell Latitude 14 7400 14 inches Note
+2023-10-03 20:11:05,415: INFO: Product price is: 33,232
+2023-10-03 20:11:05,428: INFO: Product rating is: 4.0
+2023-10-03 20:11:05,461: INFO: Product name is: Dell Inspiron 15-inch Laptop (39.62cms) | Windows 
+2023-10-03 20:11:05,486: INFO: Product price is: 39,400
+2023-10-03 20:11:05,497: INFO: Product rating is: 4.0
+2023-10-03 20:11:05,512: INFO: Product name is: Dell Inspiron 3511-Intel Core i3-11th Gen || 8 GB 
+2023-10-03 20:11:05,536: INFO: Product price is: 44,425
+2023-10-03 20:11:05,546: INFO: Product rating is: 4.3
+2023-10-03 20:11:05,569: INFO: Product name is: Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-
+2023-10-03 20:11:05,595: INFO: Product price is: 46,990
+2023-10-03 20:11:05,611: INFO: Product rating is: 4.0
+2023-10-03 20:11:05,629: INFO: Product name is: Dell Vostro 3525 Laptop, AMD Ryzen 5-5500U Process
+2023-10-03 20:11:05,652: INFO: Product price is: 42,736
+2023-10-03 20:11:05,668: INFO: Product rating is: 4.2
+2023-10-03 20:11:05,695: INFO: Product name is: (Refurbished) Dell Latitude 7400 14" Notebook - 19
+2023-10-03 20:11:05,728: INFO: Product price is: 32,500
+2023-10-03 20:11:05,742: INFO: Product rating is: 5.0
+2023-10-03 20:11:05,775: INFO: Product name is: Dell Inspiron 3530 13th Gen Laptop, Intel Core i3-
+2023-10-03 20:11:05,793: INFO: Product price is: 44,830
+2023-10-03 20:11:05,812: INFO: Product rating is: 5.0
+2023-10-03 20:11:05,841: INFO: Product name is: (Refurbished) Dell Vostro 3425 Laptop, Ryzen R5-56
+2023-10-03 20:11:05,865: INFO: Product price is: 39,601
+2023-10-03 20:11:05,882: INFO: Product rating is: 4.0
+2023-10-03 20:11:05,906: INFO: Product name is: TECNO MEGABOOK T1,Intel Core 11th Gen i3 Processor
+2023-10-03 20:11:05,940: INFO: Product price is: 39,999
+2023-10-03 20:11:05,948: INFO: Product rating is: 5.0
+2023-10-03 20:11:05,973: INFO: Product name is: Lenovo IdeaPad Slim 3 Ryzen 5 7520U 15.6" (39.6cm)
+2023-10-03 20:11:06,001: INFO: Product price is: 44,990
+2023-10-03 20:11:06,013: INFO: Product rating is: 4.1
+2023-10-03 20:11:06,039: INFO: Product name is: WALKENT Premium 15.6 Inch Laptop Bag Anti-Theft | 
+2023-10-03 20:11:06,062: INFO: Product price is: 2,421
+2023-10-03 20:11:06,098: INFO: Product rating is: 4.1
+2023-10-03 20:11:16,423: INFO: Switched to page number - 2
+2023-10-03 20:11:18,441: INFO: Scrolled down to -200 pixels
+2023-10-03 20:11:20,523: INFO: Price is in range
+2023-10-03 20:11:20,562: INFO: Price is in range
+2023-10-03 20:11:20,596: INFO: Price is in range
+2023-10-03 20:11:20,634: INFO: Price is in range
+2023-10-03 20:11:20,670: INFO: Price is in range
+2023-10-03 20:11:20,703: INFO: Price is in range
+2023-10-03 20:11:20,734: INFO: Price is in range
+2023-10-03 20:11:20,778: INFO: Price is in range
+2023-10-03 20:11:20,815: INFO: Price is in range
+2023-10-03 20:11:20,848: INFO: Price is in range
+2023-10-03 20:11:20,872: INFO: Price is in range
+2023-10-03 20:11:20,905: INFO: Price is in range
+2023-10-03 20:11:20,930: INFO: Price is in range
+2023-10-03 20:11:20,965: INFO: Price is in range
+2023-10-03 20:11:20,996: INFO: Price is in range
+2023-10-03 20:11:21,029: INFO: Price is in range
+2023-10-03 20:11:21,058: INFO: Price is in range
+2023-10-03 20:11:21,079: INFO: Price is in range
+2023-10-03 20:11:21,104: INFO: Price is in range
+2023-10-03 20:11:21,127: INFO: Price is in range
+2023-10-03 20:11:21,160: INFO: Price is in range
+2023-10-03 20:11:21,185: INFO: Price is in range
+2023-10-03 20:11:21,210: INFO: Price is in range
+2023-10-03 20:11:21,234: INFO: Price is in range
+2023-10-03 20:11:21,267: INFO: Price is in range
+2023-10-03 20:11:21,296: INFO: Price is in range
+2023-10-03 20:11:21,339: INFO: Price is in range
+2023-10-03 20:11:21,339: INFO: All Product prices are in range
+2023-10-03 20:11:21,397: INFO: Product name is: Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &
+2023-10-03 20:11:21,422: INFO: Product price is: 37,899
+2023-10-03 20:11:21,437: INFO: Product rating is: 4.0
+2023-10-03 20:11:21,462: INFO: Product name is: TECNO MEGABOOK T1, Intel Core 11th Gen i5 Processo
+2023-10-03 20:11:21,491: INFO: Product price is: 49,999
+2023-10-03 20:11:21,503: INFO: Product rating is: 5.0
+2023-10-03 20:11:21,529: INFO: Product name is: Dell Vostro 3510 Laptop, Intel Core i3-1115G4/ 8GB
+2023-10-03 20:11:21,552: INFO: Product price is: 43,750
+2023-10-03 20:11:21,570: INFO: Product rating is: 5.0
+2023-10-03 20:11:21,594: INFO: Product name is: ASUS Vivobook Go 15 OLED (2023), AMD Ryzen 5 7520U
+2023-10-03 20:11:21,611: INFO: Product price is: 49,990
+2023-10-03 20:11:21,629: INFO: Product rating is: 4.8
+2023-10-03 20:11:21,653: INFO: Product name is: Lenovo IdeaPad Slim 3 Intel Core i3-1115G4 11th Ge
+2023-10-03 20:11:21,676: INFO: Product price is: 34,990
+2023-10-03 20:11:21,684: INFO: Product rating is: 4.1
+2023-10-03 20:11:21,712: INFO: Product name is: [SmartChoice] Lenovo IdeaPad 3 11th Gen Intel Core
+2023-10-03 20:11:21,741: INFO: Product price is: 36,800
+2023-10-03 20:11:21,749: INFO: Product rating is: 4.1
+2023-10-03 20:11:21,777: INFO: Product name is: ASUS [SmartChoice] Vivobook 16X (2022), 16.0-inch 
+2023-10-03 20:11:21,800: INFO: Product price is: 49,990
+2023-10-03 20:11:21,816: INFO: Product rating is: 4.2
+2023-10-03 20:11:21,840: INFO: Product name is: Xiaomi [Smartchoice] Notebookpro Qhd+ Ips Antiglar
+2023-10-03 20:11:21,865: INFO: Product price is: 44,999
+2023-10-03 20:11:21,877: INFO: Product rating is: 4.3
+2023-10-03 20:11:21,906: INFO: Product name is: Lenovo IdeaPad Slim 3 Intel Core i3 11th Gen 14" (
+2023-10-03 20:11:21,923: INFO: Product price is: 38,990
+2023-10-03 20:11:21,940: INFO: Product rating is: 4.2
+2023-10-03 20:11:21,964: INFO: Product name is: HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 
+2023-10-03 20:11:21,980: INFO: Product price is: 37,990
+2023-10-03 20:11:22,000: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,024: INFO: Product name is: Dell Inspiron 3511Laptop - Intel i3-1115G4, 8GB, 5
+2023-10-03 20:11:22,045: INFO: Product price is: 40,149
+2023-10-03 20:11:22,062: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,088: INFO: Product name is: Dell Inspiron 3505 15.6 inches FHD Display Laptop 
+2023-10-03 20:11:22,104: INFO: Product price is: 48,500
+2023-10-03 20:11:22,123: INFO: Product rating is: 4.0
+2023-10-03 20:11:22,146: INFO: Product name is: Dell (Renewed) Latitude Laptop E7470 Intel Core I7
+2023-10-03 20:11:22,178: INFO: Product price is: 45,858
+2023-10-03 20:11:22,186: INFO: Product rating is: 2.9
+2023-10-03 20:11:22,213: INFO: Product name is: HP Laptop 15s, 12th Gen Intel Core i3-1215U, 15.6-
+2023-10-03 20:11:22,235: INFO: Product price is: 41,827
+2023-10-03 20:11:22,252: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,276: INFO: Product name is: HP 14s, Ryzen 5-5500U 16GB RAM/512GB SSD 14-inches
+2023-10-03 20:11:22,292: INFO: Product price is: 45,890
+2023-10-03 20:11:22,312: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,338: INFO: Product name is: (Refurbished) Dell New Inspiron 3515 Laptop, AMD R
+2023-10-03 20:11:22,361: INFO: Product price is: 36,550
+2023-10-03 20:11:22,375: INFO: Product rating is: 4.0
+2023-10-03 20:11:22,391: INFO: Product name is: Acer Extensa 15 Intel Core i3 N305 8 core Processo
+2023-10-03 20:11:22,415: INFO: Product price is: 35,450
+2023-10-03 20:11:22,434: INFO: Product rating is: 4.0
+2023-10-03 20:11:22,465: INFO: Product name is: HONOR MagicBook X16 (2023), 12th Gen Intel Core i5
+2023-10-03 20:11:22,489: INFO: Product price is: 43,990
+2023-10-03 20:11:22,505: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,530: INFO: Product name is: Xiaomi Notebook Ultra Max 11th Gen Intel Core i5-1
+2023-10-03 20:11:22,563: INFO: Product price is: 46,990
+2023-10-03 20:11:22,572: INFO: Product rating is: 4.2
+2023-10-03 20:11:22,595: INFO: Product name is: Acer Aspire 5 Gaming Laptop Intel Core i5 12th gen
+2023-10-03 20:11:22,619: INFO: Product price is: 49,990
+2023-10-03 20:11:22,636: INFO: Product rating is: 4.0
+2023-10-03 20:11:22,661: INFO: Product name is: Lenovo IdeaPad Slim 3 Ryzen 5 7520U 15.6" (39.6cm)
+2023-10-03 20:11:22,686: INFO: Product price is: 44,990
+2023-10-03 20:11:22,702: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,719: INFO: Product name is: Lenovo Ideapad 1 AMD Ryzen 5 5500U 15.6" (39.62cm)
+2023-10-03 20:11:22,749: INFO: Product price is: 41,990
+2023-10-03 20:11:22,759: INFO: Product rating is: 4.2
+2023-10-03 20:11:22,779: INFO: Product name is: ASUS Vivobook 15 (2023), Intel Core i3-1315U 13th 
+2023-10-03 20:11:22,825: INFO: Product price is: 45,990
+2023-10-03 20:11:22,841: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,866: INFO: Product name is: HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6
+2023-10-03 20:11:22,890: INFO: Product price is: 36,890
+2023-10-03 20:11:22,907: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,932: INFO: Product name is: HP [SmartChoice] 15s, Ryzen 5-5500U, 16GB RAM/512G
+2023-10-03 20:11:22,957: INFO: Product price is: 45,999
+2023-10-03 20:11:22,973: INFO: Product rating is: 4.1
+2023-10-03 20:11:22,999: INFO: Product name is: HP Laptop 14s, AMD Ryzen 5 5500U, 14-inch (35.6 cm
+2023-10-03 20:11:23,028: INFO: Product price is: 46,199
+2023-10-03 20:11:23,040: INFO: Product rating is: 4.2
+2023-10-03 20:11:23,040: INFO: Product data list with maximum rating: [('Dell Inspiron 3525 Laptop,R5-5625U,8Gb Ddr4,512Gb ', 5.0, 44490), ('Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4,', 5.0, 46590), ('Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1', 5.0, 39399), ('(Refurbished) Dell Latitude 7400 14" Notebook - 19', 5.0, 32500), ('Dell Inspiron 3530 13th Gen Laptop, Intel Core i3-', 5.0, 44830), ('TECNO MEGABOOK T1,Intel Core 11th Gen i3 Processor', 5.0, 39999), ('TECNO MEGABOOK T1, Intel Core 11th Gen i5 Processo', 5.0, 49999), ('Dell Vostro 3510 Laptop, Intel Core i3-1115G4/ 8GB', 5.0, 43750)]
+2023-10-03 20:11:23,045: INFO: Product name with minimum value among maximum rating: ('(Refurbished) Dell Latitude 7400 14" Notebook - 19', 5.0, 32500)
