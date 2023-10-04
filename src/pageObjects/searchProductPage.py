@@ -146,40 +146,89 @@ class SearchProductPage:
         except Exception as e:
             print(f"Exception occurred while selecting switching to page: {e}")
 
+    # def add_product_to_list(self):
+    #     wait = WebDriverWait(self.driver, 15)
+    #     products = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")))
+    #     ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span//a//i//span[@class='a-icon-alt' and contains(text(), 'out of')]")))
+    #     prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
+    #     product_data = []
+    #     # zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
+    #     for product, rating, price in zip(products, ratings, prices):
+    #         try:
+    #             product = wait.until(ec.visibility_of(product))
+    #             product = product.text
+    #             product_name = str(product[0:50])
+    #             self.logger.info(f"Product name is: {product_name}")
+    #
+    #             price = wait.until(ec.visibility_of(price))
+    #             price = price.text
+    #             product_price = int(price.replace(",", ""))
+    #             self.logger.info(f"Product price is: {price}")
+    #
+    #             # product_rating = rating.get_attribute("innerHTML")
+    #             # self.logger.info(f"Product rating using innerHTML: {product_rating}")
+    #             product_rating = rating.get_attribute("textContent")
+    #             # self.logger.info(f"Product rating using textContent : {product_rating}")
+    #             match = re.search(r'\d+\.\d+', product_rating)
+    #             if match:
+    #                 first_float_number = float(match.group())
+    #                 product_rating = first_float_number
+    #                 self.logger.info(f"Product rating is: {product_rating}")
+    #
+    #             product_data.append((product_name, product_rating, product_price))
+    #
+    #         except ValueError:
+    #             print("add products to list is failed")
+    #     # self.logger.info(f"Product data list: {product_data}")
+    #     return product_data
+
     def add_product_to_list(self):
         wait = WebDriverWait(self.driver, 15)
-        products = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")))
-        ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span//a//i//span[@class='a-icon-alt' and contains(text(), 'out of')]")))
-        prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
+        parent_xpath = "//div[@data-component-type='s-search-result']"
+        parent_elements = wait.until(ec.presence_of_all_elements_located((By.XPATH, parent_xpath)))
+
         product_data = []
-        # zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
-        for product, rating, price in zip(products, ratings, prices):
+        self.logger.info(f"Total search results: {len(parent_elements)}")
+        for parent_element in parent_elements:
             try:
-                product = wait.until(ec.visibility_of(product))
-                product = product.text
-                product_name = str(product[0:50])
-                self.logger.info(f"Product name is: {product_name}")
+                # Find child elements within the parent element
+                product_xpath = ".//span[@class='a-size-medium a-color-base a-text-normal']"
+                product_elements = WebDriverWait(parent_element, 10).until(ec.presence_of_all_elements_located((By.XPATH, product_xpath)))
 
-                price = wait.until(ec.visibility_of(price))
-                price = price.text
-                product_price = int(price.replace(",", ""))
-                self.logger.info(f"Product price is: {price}")
+                rating_xpath = ".//span//a//i//span[@class='a-icon-alt' and contains(text(), 'out of')]"
+                rating_elements = WebDriverWait(parent_element, 10).until(ec.presence_of_all_elements_located((By.XPATH, rating_xpath)))
 
-                # product_rating = rating.get_attribute("innerHTML")
-                # self.logger.info(f"Product rating using innerHTML: {product_rating}")
-                product_rating = rating.get_attribute("textContent")
-                # self.logger.info(f"Product rating using textContent : {product_rating}")
-                match = re.search(r'\d+\.\d+', product_rating)
-                if match:
-                    first_float_number = float(match.group())
-                    product_rating = first_float_number
-                    self.logger.info(f"Product rating is: {product_rating}")
+                price_xpath = ".//span[@data-a-size='xl']/span/span[@class='a-price-whole']"
+                price_elements = WebDriverWait(parent_element, 10).until(ec.presence_of_all_elements_located((By.XPATH, price_xpath)))
+                # Check if the child elements are present within the parent element
+                if product_elements and rating_elements and price_elements:
 
-                product_data.append((product_name, product_rating, product_price))
+                    for product_element, rating_element, price_element in zip(product_elements, rating_elements, price_elements):
+                        product_text = wait.until(ec.visibility_of(product_element))
+                        product_text = product_text.text
+                        product_name = str(product_text[0:50])
+                        self.logger.info(f"Product name is: {product_name}")
 
-            except ValueError:
-                print("add products to list is failed")
+                        rating_text = rating_element.get_attribute("textContent")
+                        match = re.search(r'\d+\.\d+', rating_text)
+                        if match:
+                            product_rating = float(match.group())
+                            self.logger.info(f"Product rating is: {product_rating}")
+                        else:
+                            product_rating = None
+
+                        price_text = wait.until(ec.visibility_of(price_element))
+                        price_text = price_text.text.replace(",", "").strip()
+                        product_price = int(price_text)
+                        self.logger.info(f"Product price is: {price_text}")
+
+                        product_data.append((product_name, product_rating, product_price))
+                else:
+                    self.logger.warning("One or more child elements are missing in the parent element")
+            except Exception as e:
+                self.logger.error(f"Error processing product: {str(e)}")
         # self.logger.info(f"Product data list: {product_data}")
+
         return product_data
 
     def select_rating(self, rating):
@@ -191,6 +240,51 @@ class SearchProductPage:
             self.logger.info(f"Rating {rating} is selected successfully")
         except Exception as e:
             print(f"Exception occurred while selecting rating button: {e}")
+
+    def select_brand(self, brand):
+        try:
+            # rating should be between 2 and 4
+            element = self.driver.find_element(By.XPATH, "//span[text()='{}']".format(brand))
+            element = WebDriverWait(self.driver, 15).until(ec.element_to_be_clickable(element))
+            self.driver.execute_script("arguments[0].click();", element)
+            self.logger.info(f"Brand name '{brand}' is selected successfully")
+        except Exception as e:
+            print(f"Exception occurred while selecting brand name: {e}")
+
+    def create_wish_list(self, list_name):
+        try:
+            wait = WebDriverWait(self.driver, 15)
+            actions = ActionChains(self.driver)
+            element = self.driver.find_element(By.XPATH, "//span[@class='nav-line-2 ' and text()='Account & Lists']")
+            wait.until(ec.visibility_of(element))
+            actions.move_to_element(element).perform()  # hover over 'Account & Lists'
+            element = self.driver.find_element(By.XPATH, "//span[@class='nav-text' and text()='Your Wish List']")
+            wait.until(ec.visibility_of(element))
+            actions.move_to_element(element).click().perform()  # hover over and click on 'Your Wish List'
+            element = self.driver.find_element(By.XPATH, "//a[@id='createList']")
+            wait.until(ec.visibility_of(element))
+            actions.move_to_element(element).click().perform()  # click on Create List
+            element = self.driver.find_element(By.XPATH, "//input[@id='list-name']")
+            wait.until(ec.visibility_of(element))
+            element.clear()  # clear input field
+            time.sleep(2)
+            self.logger.info(f"Input field of wish list creation panel is cleared")
+            element = self.driver.find_element(By.XPATH, "//input[@id='list-name']")
+            wait.until(ec.visibility_of(element))
+            element.send_keys(list_name)  # Enter wish list name and click button
+            time.sleep(2)
+            self.logger.info(f"New wish list name is entered")
+            child_element = self.driver.find_element(By.XPATH, "//span[@class='a-button-text' and text()='Create List']")
+            wait.until(ec.visibility_of(child_element))
+            actions.move_to_element(child_element).click().perform()
+            # parent_element = driver.find_element(By.XPATH, "//input[@fdprocessedid='c4iso']")
+            try:
+                self.driver.find_element(By.XPATH, "//span[contains(text(), '{}')]".format(list_name))
+                self.logger.info(f"New wish list is created with name '{list_name}' successfully")
+            except Exception as e:
+                print(f"Exception occurred while finding new wish list: {e}")
+        except Exception as e:
+            print(f"Exception occurred while creating new wish list: {e}")
 
 
 if __name__ == "__main__":
