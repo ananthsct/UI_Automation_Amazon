@@ -146,42 +146,6 @@ class SearchProductPage:
         except Exception as e:
             print(f"Exception occurred while selecting switching to page: {e}")
 
-    # def add_product_to_list(self):
-    #     wait = WebDriverWait(self.driver, 15)
-    #     products = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@class='a-size-medium a-color-base a-text-normal']")))
-    #     ratings = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span//a//i//span[@class='a-icon-alt' and contains(text(), 'out of')]")))
-    #     prices = wait.until(ec.presence_of_all_elements_located((By.XPATH, "//span[@data-a-size='xl']/span/span[@class='a-price-whole']")))
-    #     product_data = []
-    #     # zip_products = itertools.zip_longest(products, ratings, prices, fillvalue=None)
-    #     for product, rating, price in zip(products, ratings, prices):
-    #         try:
-    #             product = wait.until(ec.visibility_of(product))
-    #             product = product.text
-    #             product_name = str(product[0:50])
-    #             self.logger.info(f"Product name is: {product_name}")
-    #
-    #             price = wait.until(ec.visibility_of(price))
-    #             price = price.text
-    #             product_price = int(price.replace(",", ""))
-    #             self.logger.info(f"Product price is: {price}")
-    #
-    #             # product_rating = rating.get_attribute("innerHTML")
-    #             # self.logger.info(f"Product rating using innerHTML: {product_rating}")
-    #             product_rating = rating.get_attribute("textContent")
-    #             # self.logger.info(f"Product rating using textContent : {product_rating}")
-    #             match = re.search(r'\d+\.\d+', product_rating)
-    #             if match:
-    #                 first_float_number = float(match.group())
-    #                 product_rating = first_float_number
-    #                 self.logger.info(f"Product rating is: {product_rating}")
-    #
-    #             product_data.append((product_name, product_rating, product_price))
-    #
-    #         except ValueError:
-    #             print("add products to list is failed")
-    #     # self.logger.info(f"Product data list: {product_data}")
-    #     return product_data
-
     def add_product_to_list(self):
         wait = WebDriverWait(self.driver, 15)
         parent_xpath = "//div[@data-component-type='s-search-result']"
