@@ -1,6 +1,5 @@
 import time
 import re
-import itertools
 from selenium import webdriver
 from selenium.common import ElementClickInterceptedException
 from selenium.webdriver.common.by import By
@@ -17,7 +16,6 @@ class SearchProductPage:
         self.driver = driver
 
     logger = LogGen.loggen()
-
 
     # Page Locators
     all_button = (By.XPATH, "//a[@id='nav-hamburger-menu']")
@@ -78,12 +76,15 @@ class SearchProductPage:
             self.logger.info(f"All Electronics got selected")
             time.sleep(2)
         except ElementClickInterceptedException as e:
-            print(f"Element click intercepted while selecting all electronics link: {e}")
+            self.logger.error(f"Element click intercepted while selecting all electronics link: {e}")
 
     def search_product(self, item):
-        time.sleep(3)
-        self.driver.find_element(*SearchProductPage.search_box).send_keys(item, Keys.ENTER)
-        self.logger.info(f"{item} searched")
+        try:
+            time.sleep(3)
+            self.driver.find_element(*SearchProductPage.search_box).send_keys(item, Keys.ENTER)
+            self.logger.info(f"{item} searched")
+        except Exception as e:
+            self.logger.error(f"Exception occurred while searching product: {e}")
 
     def set_min_price(self):
         try:
@@ -93,7 +94,7 @@ class SearchProductPage:
             element.send_keys(price)
             self.logger.info(f"Minimum price entered is: {price}")
         except Exception as e:
-            print(f"Exception occurred while setting min_price: {e}")
+            self.logger.error(f"Exception occurred while setting min_price: {e}")
 
     def set_max_price(self):
         try:
@@ -103,7 +104,7 @@ class SearchProductPage:
             element.send_keys(price, Keys.ENTER)
             self.logger.info(f"Maximum price entered is: {price}")
         except Exception as e:
-            print(f"Exception occurred while setting max_price: {e}")
+            self.logger.error(f"Exception occurred while setting max_price: {e}")
 
     def select_go_button(self):
         try:
@@ -112,7 +113,7 @@ class SearchProductPage:
             self.driver.execute_script("arguments[0].click();", element)
             self.logger.info(f"Go button is selected")
         except Exception as e:
-            print(f"Exception occurred while selecting go button: {e}")
+            self.logger.error(f"Exception occurred while selecting go button: {e}")
 
     def is_price_in_range(self):
         try:
@@ -129,7 +130,7 @@ class SearchProductPage:
                     continue
             self.logger.info(f"All Product prices are in range")
         except Exception as e:
-            print(f"Exception occurred before verifying price range: {e}")
+            self.logger.error(f"Exception occurred before verifying price range: {e}")
 
     def go_to_page(self, page):
         try:
@@ -144,7 +145,7 @@ class SearchProductPage:
             time.sleep(3)
             self.logger.info(f"Switched to page number - {page}")
         except Exception as e:
-            print(f"Exception occurred while selecting switching to page: {e}")
+            self.logger.error(f"Exception occurred while selecting switching to page: {e}")
 
     def add_product_to_list(self):
         wait = WebDriverWait(self.driver, 15)
@@ -182,9 +183,8 @@ class SearchProductPage:
                             product_rating = None
 
                         price_text = wait.until(ec.visibility_of(price_element))
-                        price_text = price_text.text.replace(",", "").strip()
-                        product_price = int(price_text)
-                        self.logger.info(f"Product price is: {price_text}")
+                        product_price = price_text.text.strip()
+                        self.logger.info(f"Product price is: {product_price}")
 
                         product_data.append((product_name, product_rating, product_price))
                 else:
@@ -249,6 +249,39 @@ class SearchProductPage:
                 print(f"Exception occurred while finding new wish list: {e}")
         except Exception as e:
             print(f"Exception occurred while creating new wish list: {e}")
+
+    def add_product_to_wish_list(self, product_name):
+        try:
+            wait = WebDriverWait(self.driver, 15)
+            self.search_product(product_name)
+            # product_name_xpath = //a//span[contains(text(),'(Refurbished) Dell Latitude 14 7400 14 ')]
+            product_name_element = self.driver.find_element(By.XPATH, "//a//span[contains(text(),'{}')]".format(product_name))
+            self.driver.execute_script("arguments[0].scrollIntoView(true);", product_name_element)
+            self.scroll_down(-200)  # scroll up 200pixels
+            wait.until(ec.element_to_be_clickable((By.XPATH, "//a//span[contains(text(),'{}')]".format(product_name))))
+            main_window = self.driver.current_window_handle  # storing the name of main window
+            product_name_element.click()
+            self.logger.info(f"Product is clicked")
+            for handle in self.driver.window_handles:
+                if handle != main_window:
+                    self.driver.switch_to.window(handle)
+                    break
+            self.scroll_down(-200)
+            element = self.driver.find_element(By.XPATH, "//input[@id='add-to-wishlist-button']")
+            wait.until(ec.visibility_of(element))
+            time.sleep(4)
+            element.click()
+            element = self.driver.find_element(By.XPATH, "//ul[@id='atwl-dd-ul']//li[3]")
+            wait.until(ec.visibility_of(element))
+            element.click()
+            element = self.driver.find_element(By.XPATH, "//span[text()='One item added to']")
+            wait.until(ec.visibility_of(element))
+            wish_list_name = self.driver.find_element(By.XPATH, "//span[text()='Wish List To test']").text
+            wait.until(ec.visibility_of(element))
+            self.logger.info(f"Product is added to '{wish_list_name}'")
+            time.sleep(5)
+        except Exception as e:
+            self.logger.error(f"Error while selecting searched product: {str(e)}")
 
 
 if __name__ == "__main__":

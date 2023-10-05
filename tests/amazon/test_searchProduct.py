@@ -53,19 +53,9 @@ def test_product_search(setup):
     product_name = product_name_with_min_value[0]
     searchProduct.search_product(product_name)
     time.sleep(5)
-    # product_name = product_name[0:31]
-    # element = wait.until(ec.presence_of_element_located((By.XPATH, "//a//span[contains(text(),{})]".format(product_name))))
-    # driver.execute_script("arguments[0].scrollIntoView(true);", element)
-    # time.sleep(3)
-    # searchProduct.scroll_down(-200)   # scroll-up 200 pixels
-    # time.sleep(2)
-    # element.click()         # product link should open in new window
-    # logger.info(f"Product with maximum rating and minimum value is selected and opened in new window")
-    # time.sleep(4)
-    # searchProduct.scroll_down(300)          # to find the wish list button
-    # element = wait.until(ec.element_to_be_clickable((By.XPATH, "//input[@id='add-to-wishlist-button']")))
-    # element.click()
-    # time.sleep(2)
+    product_name = product_name[0:42]
+    logger.info(f"Product name after slicing is: {product_name}")
+    searchProduct.add_product_to_wish_list(product_name)
 
 
 if __name__ == '__main__':

@@ -1,8 +1,9 @@
 ##	Tools and Frameworks
 Language used: Python
-Testing Framework: Pytest and requests library
+Testing Framework: Pytest
 Logging: CustomLogger using python logging library
 Report: pytest-html reports
+Data: Used JSON file to read few test case input data
 
 ## execution instructions
 pytest -s -v .\tests\amazon\test_searchProduct.py --html=reports\report.html
@@ -22,4 +23,5 @@ While developing test cases, the following assumptions were made:
 
 ## Improvements needed
 1. Have to change absolute paths into relative paths to handle files
+2. Have to add comments and instructions for every function inside page objects
 
